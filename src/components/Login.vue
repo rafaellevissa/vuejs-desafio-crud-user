@@ -37,10 +37,14 @@
                     :loading="$store.state.auth.submitting"
                     >{{ $t("LOGIN.SUBMIT") }}</v-btn
                   >
-                  <div class="grey--text mt-4" v-on:click="register()">
-                    {{ $t("LOGIN.NEW_ACCOUNT") }}
-                  </div>
                 </form>
+                <v-row class="mt-3">
+                  <v-col>
+                    <v-btn text v-on:click="register()">
+                      {{ $t("LOGIN.NEW_ACCOUNT") }}
+                    </v-btn>
+                  </v-col>
+                </v-row>
               </v-card-text>
             </v-card>
           </v-flex>

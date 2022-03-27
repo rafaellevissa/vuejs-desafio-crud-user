@@ -54,10 +54,14 @@
                     value="log in"
                     >{{ $t("SIGNUP.SUBMIT") }}</v-btn
                   >
-                  <div class="grey--text mt-4" v-on:click="login()">
-                    {{ $t("SIGNUP.LOGIN_ACCOUNT") }}
-                  </div>
                 </form>
+                <v-row class="mt-3">
+                  <v-col>
+                    <v-btn text v-on:click="login()">
+                      {{ $t("SIGNUP.LOGIN_ACCOUNT") }}
+                    </v-btn>
+                  </v-col>
+                </v-row>
               </v-card-text>
             </v-card>
           </v-flex>
