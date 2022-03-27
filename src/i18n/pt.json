@@ -1,0 +1,26 @@
+{
+  "LOGIN": {
+    "TITLE": "Login",
+    "NEW_ACCOUNT": "Não tem uma conta? cadastre-se.",
+    "SUBMIT": "Entrar",
+    "FIELDS": {
+      "USERNAME": "Nome de usuário",
+      "PASSWORD": "Senha"
+    }
+  },
+  "SIGNUP": {
+    "TITLE": "Registrar",
+    "LOGIN_ACCOUNT": "Já tem uma conta? login.",
+    "SUBMIT": "Registrar",
+    "FIELDS": {
+      "NAME": "Nome",
+      "USERNAME": "Nome de usuário",
+      "PASSWORD": "Senha",
+      "CONFIRM_PASSWORD": "Confirmar senha"
+    }
+  },
+  "COMMON": {
+    "APP": "Aplicativo",
+    "LOGOUT": "Sair"
+  }
+}

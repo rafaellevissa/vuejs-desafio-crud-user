@@ -6,16 +6,15 @@
           <v-flex xs12 sm8 md4>
             <v-card class="elevation-12">
               <v-toolbar dark color="primary">
-                <v-toolbar-title>Login form</v-toolbar-title>
+                <v-toolbar-title>{{ $t("LOGIN.TITLE") }}</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
                 <form ref="form" @submit.prevent="login()">
                   <v-text-field
                     v-model="form.username"
                     name="username"
-                    label="Username"
+                    v-bind:label="$t('LOGIN.FIELDS.USERNAME')"
                     type="text"
-                    placeholder="username"
                   ></v-text-field>
                   <div v-if="errors.username" class="red--text">
                     {{ errors.username }}
@@ -24,9 +23,8 @@
                   <v-text-field
                     v-model="form.password"
                     name="password"
-                    label="Password"
+                    v-bind:label="$t('LOGIN.FIELDS.PASSWORD')"
                     type="password"
-                    placeholder="password"
                   ></v-text-field>
                   <div v-if="errors.password" class="red--text">
                     {{ errors.password }}
@@ -37,11 +35,10 @@
                     class="mt-4"
                     color="primary"
                     :loading="$store.state.auth.submitting"
-                    value="log in"
-                    >Login</v-btn
+                    >{{ $t("LOGIN.SUBMIT") }}</v-btn
                   >
                   <div class="grey--text mt-4" v-on:click="register()">
-                    Do not have an Acoount? signup.
+                    {{ $t("LOGIN.NEW_ACCOUNT") }}
                   </div>
                 </form>
               </v-card-text>

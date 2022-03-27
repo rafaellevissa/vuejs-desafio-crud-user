@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-toolbar color="primary" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>{{ $t("COMMON.APP") }}</v-toolbar-title>
     </v-toolbar>
     <v-navigation-drawer permanent>
       <v-list>
@@ -18,9 +18,9 @@
             <v-list-item-title class="text-h6">
               {{ username || "Username" }}
             </v-list-item-title>
-            <v-list-item-subtitle v-on:click="logout"
-              >log out</v-list-item-subtitle
-            >
+            <v-list-item-subtitle v-on:click="logout">{{
+              $t("COMMON.LOGOUT")
+            }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>

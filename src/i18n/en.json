@@ -1,0 +1,26 @@
+{
+  "LOGIN": {
+    "TITLE": "Login form",
+    "NEW_ACCOUNT": "Do not have an Acoount? signup.",
+    "SUBMIT": "Login",
+    "FIELDS": {
+      "USERNAME": "Username",
+      "PASSWORD": "Password"
+    }
+  },
+  "SIGNUP": {
+    "TITLE": "Register form",
+    "LOGIN_ACCOUNT": "Aleady have an Acoount? login.",
+    "SUBMIT": "Register",
+    "FIELDS": {
+      "NAME": "Name",
+      "USERNAME": "Username",
+      "PASSWORD": "Password",
+      "CONFIRM_PASSWORD": "Confirm password"
+    }
+  },
+  "COMMON": {
+    "APP": "Application",
+    "LOGOUT": "Logout"
+  }
+}

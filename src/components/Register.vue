@@ -6,16 +6,15 @@
           <v-flex xs12 sm8 md4>
             <v-card class="elevation-12">
               <v-toolbar dark color="primary">
-                <v-toolbar-title>Register form</v-toolbar-title>
+                <v-toolbar-title>{{ $t("SIGNUP.TITLE") }}</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
                 <form ref="form" @submit.prevent="register()">
                   <v-text-field
                     v-model="form.name"
                     name="name"
-                    label="Name"
+                    :label="$t('SIGNUP.FIELDS.NAME')"
                     type="text"
-                    placeholder="username"
                   ></v-text-field>
                   <div v-if="errors.name" class="red--text">
                     {{ errors.name }}
@@ -23,9 +22,8 @@
                   <v-text-field
                     v-model="form.username"
                     name="username"
-                    label="Username"
+                    :label="$t('SIGNUP.FIELDS.USERNAME')"
                     type="text"
-                    placeholder="username"
                   ></v-text-field>
                   <div v-if="errors.username" class="red--text">
                     {{ errors.username }}
@@ -33,9 +31,8 @@
                   <v-text-field
                     v-model="form.password"
                     name="password"
-                    label="Password"
+                    :label="$t('SIGNUP.FIELDS.PASSWORD')"
                     type="password"
-                    placeholder="password"
                   ></v-text-field>
                   <div v-if="errors.password" class="red--text">
                     {{ errors.password }}
@@ -43,9 +40,8 @@
                   <v-text-field
                     v-model="form.confirmPassword"
                     name="confirmPassword"
-                    label="Confirm Password"
+                    :label="$t('SIGNUP.FIELDS.CONFIRM_PASSWORD')"
                     type="password"
-                    placeholder="confirm password"
                   ></v-text-field>
                   <div v-if="errors.confirmPassword" class="red--text">
                     {{ errors.confirmPassword }}
@@ -56,10 +52,10 @@
                     color="primary"
                     :loading="$store.state.auth.submitting"
                     value="log in"
-                    >Register</v-btn
+                    >{{ $t("SIGNUP.SUBMIT") }}</v-btn
                   >
                   <div class="grey--text mt-4" v-on:click="login()">
-                    Aleady have an Acoount? login.
+                    {{ $t("SIGNUP.LOGIN_ACCOUNT") }}
                   </div>
                 </form>
               </v-card-text>
